@@ -1,7 +1,5 @@
 # Proyecto3
 
-#README.md
-
 ### PASOS PARA MONTAR EL BUILD EN EL PROYECTO
 
 * Abrimos el programa CMake-GUI (El CMake se encuentra en el Repositorio CMake)
