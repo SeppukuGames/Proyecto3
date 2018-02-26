@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="9b081961-09d0-4de5-bd5d-97575303d43d" name="UMLComponentDiagram1" linkedPackageId="489f2a9c-7354-4ca1-b386-84503efb971b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="22f635c2-2e7e-4da1-b4f4-391c110fbc89">
+      <profileInstance Id="1d42c587-76b7-46f6-a39c-0165ce189d62" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bdf199f5-1595-4b87-bee6-837aeec0885d">
+      <profileInstance Id="5b24f7cc-801c-455d-ab6b-ef756880ad6e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" name="Application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a9c04606-0311-410b-919e-9d7e256c1649" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2a5c9e12-bfd7-4db2-8ba7-96c93047cb42" name="Audio" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="32269b8b-b59e-414a-ad50-b742fc710bbd" />
+        <suppliersInternal>
+          <dependency Id="3fb3445d-9bc4-4cd5-bea3-659ee8e5c49f">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="1010e900-af4f-4610-b169-cc2ae4f98f79" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="fe963224-4ea2-4b8c-86cc-1644b41b116d" name="Canvas" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d338d795-7d55-44a2-9f0d-79305c0d5d99" />
+        <suppliersInternal>
+          <dependency Id="28fac6c6-b557-4375-b2b8-e8c2be26b069">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="30bc63ed-5962-4b8a-8b48-43937adbfbb3" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7b21380f-5cb2-4740-9460-465a4b224f87" name="GameObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="343c18f6-00eb-4c98-8590-db1d727f68d2" />
+        <suppliersInternal>
+          <dependency Id="853470cb-59ed-4bef-a252-da094ad5c18d">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="3a17b2ef-3316-45ba-8037-80d7a30b5255" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="b1a19025-8f64-473d-bdc7-595ea690fb82" name="Transform" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="e5154b61-496b-44a9-9ae0-ada969858d34" />
+            <type_NamedElement>
+              <componentMoniker Id="f208c716-fabc-4b6d-a0fc-a288858037ce" LastKnownName="GameObject" />
+            </type_NamedElement>
+          </part>
+          <part Id="fd9c16cd-9d10-456f-9c43-0bdeb17cc239" name="Texture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="61dc4086-6871-4ac4-9cd7-e0018cdba3cb" />
+            <type_NamedElement>
+              <componentMoniker Id="ce542cba-77d1-43b3-97ba-2a8a42545823" LastKnownName="GameObject" />
+            </type_NamedElement>
+          </part>
+          <part Id="ea9ad3cb-68a8-4ef2-826c-630c31063fe9" name="Physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="8a4bff4b-6c15-4574-be20-5f480b1d370f" />
+            <type_NamedElement>
+              <componentMoniker Id="11a1b57c-9a74-4d25-8f6c-39ac40ee859d" LastKnownName="GameObject" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a2a1211e-be66-4538-8067-452cdebb3c75" name="IA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f1904a2-5bd0-4e9c-97e9-0358f3eda3c4" />
+        <suppliersInternal>
+          <dependency Id="23f9cf14-a60d-4d71-9dee-c16f01df240f">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="f98ecf6a-b588-4c4d-bd2c-22f75f5ed8cb" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="ab37be82-cb04-4aa2-9246-384ced669d72" name="A*" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="1fd2a4c1-4f61-4911-9498-b039cb7cdab4" />
+            <type_NamedElement>
+              <componentMoniker Id="1f7c0e18-d7fa-405c-8e7b-08799b1f76e5" LastKnownName="IA" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="58acff06-80af-4312-8fb2-2e5a9f475105" name="Mapa" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b94c66f6-62bc-4d28-bbfb-10f5675ce1bb" />
+        <suppliersInternal>
+          <dependency Id="25ed959c-e53b-4a77-afe6-4562a10e0a34">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="f69ae61f-af86-4b1b-bfd2-2550569504c7" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4dd2ad5d-9136-4855-8256-e4098530dcfe" name="Menu" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4a31eff5-e43a-4329-a901-89ebed22ab28" />
+        <suppliersInternal>
+          <dependency Id="f37b138f-84d1-472e-ad50-6899a825bda7">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="23aa5cf8-6c4b-4c78-8a56-6e3f68c1dac8" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="1f7c0e18-d7fa-405c-8e7b-08799b1f76e5" name="IA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3f51c354-f400-4031-812a-52d053110980" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f208c716-fabc-4b6d-a0fc-a288858037ce" name="GameObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0d36f4e8-df4a-431f-8777-40e370ebe4e0" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ce542cba-77d1-43b3-97ba-2a8a42545823" name="GameObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="80387c80-8a28-434f-aabb-b74a3065b0a2" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="11a1b57c-9a74-4d25-8f6c-39ac40ee859d" name="GameObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="edc5317d-cfe4-477f-969e-45cca5bf158e" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="489f2a9c-7354-4ca1-b386-84503efb971b" name="Diagramas">
+    <elementDefinition Id="d6a84171-30d4-4ab3-b8e5-267070c71490" />
+  </package>
+</componentModel>

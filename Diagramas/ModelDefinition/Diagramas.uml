@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="d6a84171-30d4-4ab3-b8e5-267070c71490"
+  name="Diagramas" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <component
+        Id="a9c04606-0311-410b-919e-9d7e256c1649"
+        name="Application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="32269b8b-b59e-414a-ad50-b742fc710bbd"
+        name="Audio"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1010e900-af4f-4610-b169-cc2ae4f98f79">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d338d795-7d55-44a2-9f0d-79305c0d5d99"
+        name="Canvas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="30bc63ed-5962-4b8a-8b48-43937adbfbb3">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="343c18f6-00eb-4c98-8590-db1d727f68d2"
+        name="GameObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="3a17b2ef-3316-45ba-8037-80d7a30b5255">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="e5154b61-496b-44a9-9ae0-ada969858d34"
+            name="Transform"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="0d36f4e8-df4a-431f-8777-40e370ebe4e0"
+                LastKnownName="GameObject"
+                LastKnownLocation="Diagramas.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="61dc4086-6871-4ac4-9cd7-e0018cdba3cb"
+            name="Texture"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="80387c80-8a28-434f-aabb-b74a3065b0a2"
+                LastKnownName="GameObject"
+                LastKnownLocation="Diagramas.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="8a4bff4b-6c15-4574-be20-5f480b1d370f"
+            name="Physics"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="edc5317d-cfe4-477f-969e-45cca5bf158e"
+                LastKnownName="GameObject"
+                LastKnownLocation="Diagramas.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1f1904a2-5bd0-4e9c-97e9-0358f3eda3c4"
+        name="IA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f98ecf6a-b588-4c4d-bd2c-22f75f5ed8cb">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="1fd2a4c1-4f61-4911-9498-b039cb7cdab4"
+            name="A*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="3f51c354-f400-4031-812a-52d053110980"
+                LastKnownName="IA"
+                LastKnownLocation="Diagramas.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9f94fab7-b25d-4ee3-bebc-9366307cb079"
+        name="Fisica"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b94c66f6-62bc-4d28-bbfb-10f5675ce1bb"
+        name="Mapa"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f69ae61f-af86-4b1b-bfd2-2550569504c7">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="4a31eff5-e43a-4329-a901-89ebed22ab28"
+        name="Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="23aa5cf8-6c4b-4c78-8a56-6e3f68c1dac8">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="00fc5715-a953-4841-93ca-d3436687f430"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3f51c354-f400-4031-812a-52d053110980"
+        name="IA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0d36f4e8-df4a-431f-8777-40e370ebe4e0"
+        name="GameObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="80387c80-8a28-434f-aabb-b74a3065b0a2"
+        name="GameObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="edc5317d-cfe4-477f-969e-45cca5bf158e"
+        name="GameObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
