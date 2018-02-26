@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="9b081961-09d0-4de5-bd5d-97575303d43d" name="UMLComponentDiagram1" linkedPackageId="489f2a9c-7354-4ca1-b386-84503efb971b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="22f635c2-2e7e-4da1-b4f4-391c110fbc89">
-      <profileInstance Id="1d42c587-76b7-46f6-a39c-0165ce189d62" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="bdf199f5-1595-4b87-bee6-837aeec0885d">
-      <profileInstance Id="5b24f7cc-801c-455d-ab6b-ef756880ad6e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="9b081961-09d0-4de5-bd5d-97575303d43d" name="UMLComponentDiagram1" linkedPackageId="489f2a9c-7354-4ca1-b386-84503efb971b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
   <packagedElements>
     <componentModelHasComponents>
       <component Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" name="Application" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -29,6 +15,32 @@
             <elementDefinition Id="1010e900-af4f-4610-b169-cc2ae4f98f79" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="02a2c4f8-b1ef-41ca-a739-e6275812c8e4" name="Effects" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="e3fb6f5b-dc11-4610-a62a-a473391ca632" />
+            <type_NamedElement>
+              <componentMoniker Id="e85aad2b-825a-42dd-99bd-172378b4ef1c" LastKnownName="Audio" />
+            </type_NamedElement>
+          </part>
+          <part Id="b5d6978c-2d9b-49d8-a561-7cca3076c2eb" name="Music" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="2df616a3-7425-4202-a92b-10c3dd59cbc4" />
+            <type_NamedElement>
+              <componentMoniker Id="91832f9d-db5a-4036-b3a4-b831b22227fb" LastKnownName="Audio" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="09baf362-4366-43f5-b217-6e49dcf9a045" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7f09ddef-32bb-4d6d-bbe9-a9435380528f" />
+            <suppliersInternal>
+              <dependency Id="c03d0abf-f0eb-44e4-ad98-0d2569e4bf8d">
+                <providedInterfaceMoniker Id="fa4b9990-0335-4e6e-9dd9-c56ce05ba2f8" LastKnownName="Port2" />
+                <elementDefinition Id="2803c6ca-48f7-4747-83ab-b25147c36745" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="2d2296d9-3427-4f4a-90a1-2d44ef337689" LastKnownName="Interface16" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
@@ -40,6 +52,44 @@
             <elementDefinition Id="30bc63ed-5962-4b8a-8b48-43937adbfbb3" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="cd36fbcf-4799-407d-81ae-ba0839feed83" name="Button" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="1b6542c9-a38e-4ee6-8448-cb5d7d8a6820" />
+            <type_NamedElement>
+              <componentMoniker Id="7fc0ec08-97a1-4e18-b2d6-1d0f5970cc83" LastKnownName="Canvas" />
+            </type_NamedElement>
+          </part>
+          <part Id="242abc28-1d25-4f6c-8ad3-3cf0fce985d1" name="Image" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="d060495c-3083-4061-a96a-b72d171e18ec" />
+            <type_NamedElement>
+              <componentMoniker Id="b127aa7a-6ca1-424c-ac1a-38fda5ad79d8" LastKnownName="Canvas" />
+            </type_NamedElement>
+          </part>
+          <part Id="b49471ef-2cfe-4131-a41c-4a84fe255ef4" name="Text" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="7c927c9c-5d05-4b86-8dc7-e120e265fd8c" />
+            <type_NamedElement>
+              <componentMoniker Id="d96b6f2c-cc41-4303-8042-f3b07de423df" LastKnownName="Canvas" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="5d66fac0-6d0f-47fe-b3e9-e14c2570f0a2" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="b49c3a31-8deb-4fa1-9994-2ad5f42313c9" />
+            <suppliersInternal>
+              <dependency Id="c13363ac-d807-4c94-9321-d83c16dc42e3">
+                <providedInterfaceMoniker Id="c8e65d8c-c5b0-4080-bcae-a7b2221e1e77" LastKnownName="Port1" />
+                <elementDefinition Id="b11ce20c-82b5-41a2-bbe4-35162dcd4f4e" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="83a56fc9-3a64-4dea-8aa8-3c3516f4f87f" LastKnownName="Interface2" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="abb00f49-c439-4e82-852a-21f9cb05b4f0" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="42481aab-2beb-4669-8229-267876ebc4ef" />
+            <type_NamedElement>
+              <interfaceMoniker Id="647fe2bf-53e2-4212-ac24-7d25648ebc47" LastKnownName="Interface10" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
@@ -58,7 +108,7 @@
               <componentMoniker Id="f208c716-fabc-4b6d-a0fc-a288858037ce" LastKnownName="GameObject" />
             </type_NamedElement>
           </part>
-          <part Id="fd9c16cd-9d10-456f-9c43-0bdeb17cc239" name="Texture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+          <part Id="fd9c16cd-9d10-456f-9c43-0bdeb17cc239" name="Render" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
             <elementDefinition Id="61dc4086-6871-4ac4-9cd7-e0018cdba3cb" />
             <type_NamedElement>
               <componentMoniker Id="ce542cba-77d1-43b3-97ba-2a8a42545823" LastKnownName="GameObject" />
@@ -70,6 +120,18 @@
               <componentMoniker Id="11a1b57c-9a74-4d25-8f6c-39ac40ee859d" LastKnownName="GameObject" />
             </type_NamedElement>
           </part>
+          <requiredInterface Id="1e158e56-a0f3-451b-9bbf-962dd5f56651" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7696926c-a936-4f7d-83f0-7860f38d769f" />
+            <suppliersInternal>
+              <dependency Id="fdfa67cd-3bb1-4730-a320-ebf6778c8c19">
+                <providedInterfaceMoniker Id="dc5ce57a-6922-4345-ac02-725ccf8da9d1" LastKnownName="Port1" />
+                <elementDefinition Id="c39d9d0d-b099-4c23-9a8e-8dc7b9538123" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="ee30cf4b-79e6-4ddd-bd03-75773b486af5" LastKnownName="Interface5" />
+            </type_NamedElement>
+          </requiredInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
@@ -101,10 +163,24 @@
             <elementDefinition Id="f69ae61f-af86-4b1b-bfd2-2550569504c7" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="eaacdebf-3f5c-4b00-8a5e-0f8ef8d341b4" name="Tile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="8f679b1f-c23a-4716-b9f5-5045a09b64b8" />
+            <type_NamedElement>
+              <componentMoniker Id="762f4d27-3f68-4622-a40c-c3aa828beb70" LastKnownName="Mapa" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="dc5ce57a-6922-4345-ac02-725ccf8da9d1" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a6bf92ad-1bed-41f1-a4e2-2e435642d2f3" />
+            <type_NamedElement>
+              <interfaceMoniker Id="9d1a2e12-f598-4b47-8ced-2e09e8ad07d0" LastKnownName="Interface4" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
-      <component Id="4dd2ad5d-9136-4855-8256-e4098530dcfe" name="Menu" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <component Id="4dd2ad5d-9136-4855-8256-e4098530dcfe" name="GestorEstados" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4a31eff5-e43a-4329-a901-89ebed22ab28" />
         <suppliersInternal>
           <dependency Id="f37b138f-84d1-472e-ad50-6899a825bda7">
@@ -112,6 +188,97 @@
             <elementDefinition Id="23aa5cf8-6c4b-4c78-8a56-6e3f68c1dac8" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="f6967481-2178-4f8d-a825-ad163d00ef07" name="EstadoJuego" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="f07b205e-be0f-4fa9-8c04-4e40f2681cab" />
+            <type_NamedElement>
+              <componentMoniker Id="d4c39343-78e4-40a0-8183-1b2fd5e84dbd" LastKnownName="GestorEstados" />
+            </type_NamedElement>
+          </part>
+          <part Id="12ce3dd2-78f8-4c5c-b864-8f514bf8bc09" name="EstadoPausa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="c0cec75f-3f63-46a1-a831-dc7cde4286f5" />
+            <type_NamedElement>
+              <componentMoniker Id="bb3d9e3b-7678-4e18-a945-81487781d221" LastKnownName="GestorEstados" />
+            </type_NamedElement>
+          </part>
+          <part Id="7644c873-103e-44ac-9bb4-3c6c5e213a27" name="EstadoMenu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="78d9e4db-d146-454d-a7f3-ca49f3fc0313" />
+            <type_NamedElement>
+              <componentMoniker Id="6ecf2c52-2e12-4c9f-8698-1f517417ba8a" LastKnownName="GestorEstados" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="c8e65d8c-c5b0-4080-bcae-a7b2221e1e77" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="be84e771-0d8b-4a57-a43d-8cf051afb192" />
+            <type_NamedElement>
+              <interfaceMoniker Id="c64c2b65-f3aa-4e8d-bf01-96775250f0b2" LastKnownName="Interface3" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="fa4b9990-0335-4e6e-9dd9-c56ce05ba2f8" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="f8808da1-851a-4352-9d72-1ef1f4b3389f" />
+            <targetNamedElementsInternal>
+              <connector Id="130f55af-24e2-4c67-9288-29c0787324a5" isLeaf="false" isStatic="false">
+                <partMoniker Id="f6967481-2178-4f8d-a825-ad163d00ef07" LastKnownName="EstadoJuego" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="a3e739d0-b093-4e6c-b7cd-63e7df3d086c">
+                      <elementDefinition Id="3bd2f6fa-0128-4898-8c6b-3dbacb83abbb" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="38f1359b-8835-440b-918e-8426979532b7">
+                      <elementDefinition Id="7058b7d4-ff80-49fd-8286-6088df9700ad" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="503372b3-73d5-40ba-9319-9b0d9c72cdca" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="994228cb-5e69-4cf2-954f-0a0a681ed65d" />
+              </connector>
+              <connector Id="2d2ebf86-cf31-4c8e-a960-7c6fa9a9f544" isLeaf="false" isStatic="false">
+                <partMoniker Id="12ce3dd2-78f8-4c5c-b864-8f514bf8bc09" LastKnownName="EstadoPausa" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="50affff9-eaba-4c04-b25f-118265714bbb">
+                      <elementDefinition Id="a30fac3f-71f2-4a45-9024-fc119a945016" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="20c24782-b681-471c-96fa-a203d025a091">
+                      <elementDefinition Id="97d9e241-8cdd-41bf-8f7a-961ae1b589b5" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="06e77474-0d74-4d75-9ffe-24e6f004e469" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="d7ac0b06-41a3-456d-8d26-46e7328095f3" />
+              </connector>
+              <connector Id="93d86413-f2fc-4190-8173-7f14a04dc01c" isLeaf="false" isStatic="false">
+                <partMoniker Id="7644c873-103e-44ac-9bb4-3c6c5e213a27" LastKnownName="EstadoMenu" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="976bc9d3-3319-4786-bfcb-9dfdb4137115">
+                      <elementDefinition Id="d6364313-5ff9-4e61-971d-e53cdd90a3c8" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="7ae49dab-c38a-4bd5-a6e6-319c3ddc18bf">
+                      <elementDefinition Id="91a22890-a9af-4aaa-be74-5749d79d0a33" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="140c1df0-db12-40a2-a67d-1003415a4493" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="95181754-5e69-401b-9d2b-b0d712d4a27c" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="5e693d7a-811d-4673-9136-7e2b7c1049d2" LastKnownName="Interface15" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
@@ -134,8 +301,193 @@
         <elementDefinition Id="edc5317d-cfe4-477f-969e-45cca5bf158e" />
       </component>
     </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e85aad2b-825a-42dd-99bd-172378b4ef1c" name="Audio" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8b2c2086-4b5f-427a-a401-2eaabbc007e7" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="91832f9d-db5a-4036-b3a4-b831b22227fb" name="Audio" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cd71e3d1-6768-495f-8a92-fb1a54aaa31b" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7fc0ec08-97a1-4e18-b2d6-1d0f5970cc83" name="Canvas" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="828ad1e6-9073-413c-8049-4b45410b2538" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b127aa7a-6ca1-424c-ac1a-38fda5ad79d8" name="Canvas" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2909e38d-dbfe-4d6d-adb7-0f13fd2eb41c" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d96b6f2c-cc41-4303-8042-f3b07de423df" name="Canvas" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="147fc9d6-8850-461e-9872-f57087de677e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="07ddb260-2bdb-48fb-b598-2efed398bc68" name="EventSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="434a9fc8-0caf-40f0-9e68-76df6d6e6dae" />
+        <suppliersInternal>
+          <dependency Id="4031494f-a394-40ec-b9e7-3aba6535bd5b">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="fc5fd606-f410-4ece-9833-6ece12ba4e52" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="cb811e69-5424-4f8d-9075-03e79986bb5e" name="Input" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="20379465-ffd6-4025-9809-c0a26cf044f9" />
+            <type_NamedElement>
+              <componentMoniker Id="e7b16722-547d-476c-9cb8-6847a1efa4ea" LastKnownName="EventSystem" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="1c1e8f90-b441-4ff9-b396-fbff6701a532" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="dfb4d6ef-4a76-4792-9c28-ced7e9d42184" />
+            <suppliersInternal>
+              <dependency Id="cb80df0b-29ca-4dae-95a3-19de22f6c06d">
+                <providedInterfaceMoniker Id="abb00f49-c439-4e82-852a-21f9cb05b4f0" LastKnownName="Port2" />
+                <elementDefinition Id="3a82c39c-7d7f-49c7-8f6b-4a7c10b5247b" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="be384e56-7586-4b93-bef3-bf8fd208dbf6" LastKnownName="Interface11" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="762f4d27-3f68-4622-a40c-c3aa828beb70" name="Mapa" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d3c5ab51-10b7-45f0-8201-6abd16c49bc9" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e7b16722-547d-476c-9cb8-6847a1efa4ea" name="EventSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="24fb981e-d586-42cf-a968-1915d37bf523" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="886a15ae-5be3-4b6c-9d44-fb10c692416c" name="InitOgre" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2eb447ec-7239-4119-87e4-1e53dfc9aa9e" />
+        <suppliersInternal>
+          <dependency Id="a8e20394-708a-494b-b8b9-639fddd011ad">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="d24d8016-1946-46d1-a8e3-cb33e5050ae2" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d4c39343-78e4-40a0-8183-1b2fd5e84dbd" name="GestorEstados" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="73422a28-3d3a-44e1-9c30-1101711d508f" />
+        <ownedAttributesInternal>
+          <providedInterface Id="503372b3-73d5-40ba-9319-9b0d9c72cdca" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="77b84bc7-9ab6-4833-a2bb-c73524ecbd19" />
+            <type_NamedElement>
+              <interfaceMoniker Id="a10b6c33-1d1e-4a03-9bda-8ec2aece4948" LastKnownName="Interface12" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="bb3d9e3b-7678-4e18-a945-81487781d221" name="GestorEstados" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e53a1153-19d4-4535-adb5-bf12306e6580" />
+        <ownedAttributesInternal>
+          <providedInterface Id="06e77474-0d74-4d75-9ffe-24e6f004e469" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="3b47f9f9-774e-46ee-a9e0-4378874fedae" />
+            <type_NamedElement>
+              <interfaceMoniker Id="e1664491-9267-421b-92ba-b72e7226ee56" LastKnownName="Interface13" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="6ecf2c52-2e12-4c9f-8698-1f517417ba8a" name="GestorEstados" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="06d74559-89c8-459d-bce9-ad2e05c7fe5b" />
+        <ownedAttributesInternal>
+          <providedInterface Id="140c1df0-db12-40a2-a67d-1003415a4493" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="9cbe35e1-e646-4269-b324-a47f54f91d88" />
+            <type_NamedElement>
+              <interfaceMoniker Id="cc96bf05-312b-44da-91f3-14e14914f762" LastKnownName="Interface14" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="83a56fc9-3a64-4dea-8aa8-3c3516f4f87f" name="Interface2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="654e560c-395b-4924-83bb-7bd380675060" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="c64c2b65-f3aa-4e8d-bf01-96775250f0b2" name="Interface3" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="db64f777-bb41-4411-b284-7bbdc764d29f" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="9d1a2e12-f598-4b47-8ced-2e09e8ad07d0" name="Interface4" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e8227e0-e63c-48a9-a849-7a7f027c5a41" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="ee30cf4b-79e6-4ddd-bd03-75773b486af5" name="Interface5" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97cb2cce-424b-4a72-bc74-49c34985d2cd" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="647fe2bf-53e2-4212-ac24-7d25648ebc47" name="Interface10" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3e2d6a1-f95e-4e4b-b3cc-3d9f5a9ca930" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="be384e56-7586-4b93-bef3-bf8fd208dbf6" name="Interface11" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4e1c96d-d977-4584-b638-c58ccbadd209" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="a10b6c33-1d1e-4a03-9bda-8ec2aece4948" name="Interface12" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ccf45170-ffb3-4d04-bfae-5036f3dcbbf0" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="e1664491-9267-421b-92ba-b72e7226ee56" name="Interface13" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ddf79562-8b18-4ff3-bd68-800d09ad5589" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="cc96bf05-312b-44da-91f3-14e14914f762" name="Interface14" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="77a59831-f064-4446-8e1f-56c2a8b33209" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="5e693d7a-811d-4673-9136-7e2b7c1049d2" name="Interface15" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c21fd92-40af-49d7-981c-4a5aa7dfac2c" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="2d2296d9-3427-4f4a-90a1-2d44ef337689" name="Interface16" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e3b65f2-af05-418f-ac74-64e98963d165" />
+      </Interface>
+    </modelContainsNamedElements>
   </packagedElements>
   <package Id="489f2a9c-7354-4ca1-b386-84503efb971b" name="Diagramas">
     <elementDefinition Id="d6a84171-30d4-4ab3-b8e5-267070c71490" />
+    <profileInstances>
+      <packageHasProfileInstances Id="22f635c2-2e7e-4da1-b4f4-391c110fbc89">
+        <profileInstance Id="1d42c587-76b7-46f6-a39c-0165ce189d62" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="bdf199f5-1595-4b87-bee6-837aeec0885d">
+        <profileInstance Id="5b24f7cc-801c-455d-ab6b-ef756880ad6e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </componentModel>
