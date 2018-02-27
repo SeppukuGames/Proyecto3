@@ -503,11 +503,35 @@
             <elementDefinition Id="a810b0ef-ca01-4c3a-bcc0-26d8465d8dff" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="55ceda5d-c25e-4815-922f-2f9830105315" name="BoxCollider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="79071850-4237-44d6-b02c-453ded340a66" />
+            <type_NamedElement>
+              <componentMoniker Id="870f0556-015a-41db-8b19-ea02aac96e6f" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+          <part Id="3efca7c8-f9fe-454b-bc20-2839e0c96c3e" name="RigidBody" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="535b719d-ee8e-4ae7-a24d-9ba43e7a1edd" />
+            <type_NamedElement>
+              <componentMoniker Id="5616d15d-450e-4f9e-98eb-6f72ec6178f7" LastKnownName="Component4" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
       <component Id="c9ececec-6739-4f9e-bed4-127fa9275f22" name="Escena" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="83094146-d0ab-48ac-b3cf-6acc5ad2ca9a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="870f0556-015a-41db-8b19-ea02aac96e6f" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cbccb41c-3f69-405a-9dd2-03bcd0bccfce" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="5616d15d-450e-4f9e-98eb-6f72ec6178f7" name="Component4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f26af2dc-81b4-46d0-b5c0-4f92d1ec3f6b" />
       </component>
     </componentModelHasComponents>
   </packagedElements>

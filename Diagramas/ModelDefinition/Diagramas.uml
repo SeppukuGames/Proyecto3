@@ -1097,12 +1097,64 @@
               LastKnownLocation="Diagramas.uml" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="79071850-4237-44d6-b02c-453ded340a66"
+            name="BoxCollider"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="cbccb41c-3f69-405a-9dd2-03bcd0bccfce"
+                LastKnownName="Component3"
+                LastKnownLocation="Diagramas.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="535b719d-ee8e-4ae7-a24d-9ba43e7a1edd"
+            name="RigidBody"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="f26af2dc-81b4-46d0-b5c0-4f92d1ec3f6b"
+                LastKnownName="Component4"
+                LastKnownLocation="Diagramas.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component
         Id="83094146-d0ab-48ac-b3cf-6acc5ad2ca9a"
         name="Escena"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="cbccb41c-3f69-405a-9dd2-03bcd0bccfce"
+        name="Component3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f26af2dc-81b4-46d0-b5c0-4f92d1ec3f6b"
+        name="Component4"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
