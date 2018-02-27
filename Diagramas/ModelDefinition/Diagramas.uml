@@ -29,7 +29,7 @@
     <packageHasNamedElement>
       <component
         Id="32269b8b-b59e-414a-ad50-b742fc710bbd"
-        name="Audio"
+        name="MotorAudio"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -322,6 +322,23 @@
                 LastKnownLocation="Diagramas.uml" />
             </type_NamedElement>
           </requiredInterface>
+          <part
+            Id="b6f5d3a6-884b-4f7b-904d-deb9caef3000"
+            name="Input"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="11d83b52-c8d2-44f6-8cad-ee57861c782d"
+                LastKnownName="GameObject"
+                LastKnownLocation="Diagramas.uml" />
+            </type_NamedElement>
+          </part>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -1029,6 +1046,66 @@
         name="Interface16"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e7da634d-cd6a-4886-8bf2-d4df11cdb3cd"
+        name="InitMultimedia"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1e2d340a-7dec-4655-b555-a60274c45637">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="11d83b52-c8d2-44f6-8cad-ee57861c782d"
+        name="GameObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6da6ce51-e790-45af-8f8d-ff49ff0ee53d"
+        name="x"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a2dd1a43-9d20-44a5-8ed7-a422d77bfc97"
+        name="PhysicsComponent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a810b0ef-ca01-4c3a-bcc0-26d8465d8dff">
+            <componentMoniker
+              Id="a9c04606-0311-410b-919e-9d7e256c1649"
+              LastKnownName="Application"
+              LastKnownLocation="Diagramas.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="83094146-d0ab-48ac-b3cf-6acc5ad2ca9a"
+        name="Escena"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

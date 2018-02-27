@@ -7,7 +7,7 @@
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
-      <component Id="2a5c9e12-bfd7-4db2-8ba7-96c93047cb42" name="Audio" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <component Id="2a5c9e12-bfd7-4db2-8ba7-96c93047cb42" name="MotorAudio" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="32269b8b-b59e-414a-ad50-b742fc710bbd" />
         <suppliersInternal>
           <dependency Id="3fb3445d-9bc4-4cd5-bea3-659ee8e5c49f">
@@ -132,6 +132,12 @@
               <interfaceMoniker Id="ee30cf4b-79e6-4ddd-bd03-75773b486af5" LastKnownName="Interface5" />
             </type_NamedElement>
           </requiredInterface>
+          <part Id="5b512fbb-e02a-418c-a764-2fdf2dc111b8" name="Input" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="b6f5d3a6-884b-4f7b-904d-deb9caef3000" />
+            <type_NamedElement>
+              <componentMoniker Id="5204babd-968f-4239-adef-9b862dd2788b" LastKnownName="GameObject" />
+            </type_NamedElement>
+          </part>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
@@ -472,6 +478,38 @@
         <elementDefinition Id="1e3b65f2-af05-418f-ac74-64e98963d165" />
       </Interface>
     </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="67611d87-f5f5-454d-b04a-861808b9f38e" name="InitMultimedia" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e7da634d-cd6a-4886-8bf2-d4df11cdb3cd" />
+        <suppliersInternal>
+          <dependency Id="25058068-3473-48e9-81b8-1f3f8830aa08">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="1e2d340a-7dec-4655-b555-a60274c45637" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="5204babd-968f-4239-adef-9b862dd2788b" name="GameObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="11d83b52-c8d2-44f6-8cad-ee57861c782d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3bd29549-d4e5-412f-b54c-0d6a4ebe19f1" name="PhysicsComponent" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2dd1a43-9d20-44a5-8ed7-a422d77bfc97" />
+        <suppliersInternal>
+          <dependency Id="0c7e87d9-6d1a-4ab9-8c1e-d0bfb63070b1">
+            <componentMoniker Id="a6291749-26bd-49a9-bdcb-ad39772d2f8f" LastKnownName="Application" />
+            <elementDefinition Id="a810b0ef-ca01-4c3a-bcc0-26d8465d8dff" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c9ececec-6739-4f9e-bed4-127fa9275f22" name="Escena" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="83094146-d0ab-48ac-b3cf-6acc5ad2ca9a" />
+      </component>
+    </componentModelHasComponents>
   </packagedElements>
   <package Id="489f2a9c-7354-4ca1-b386-84503efb971b" name="Diagramas">
     <elementDefinition Id="d6a84171-30d4-4ab3-b8e5-267070c71490" />
