@@ -6,7 +6,6 @@
 
 Inter/
 Build/
-!Dependencies/
 Dependencies/Ogre/
 
 # Otros archivos que he visto que hay que ignorar
