@@ -1,4 +1,4 @@
-#include "ProyectoBasico.h"
+/*#include "ProyectoBasico.h"
 
 #include <OgreRoot.h>
 
@@ -23,4 +23,4 @@ int CALLBACK WinMain(
 	ProyectoBasico * pb = new ProyectoBasico();
 	pb->go();
 	return 0;
-}
+}*/
